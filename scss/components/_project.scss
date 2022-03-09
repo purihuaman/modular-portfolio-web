@@ -1,0 +1,32 @@
+.project {
+  margin-top: var(--s-margin);
+  position: relative;
+
+  @include breakpoint(laptops) {
+    margin-top: 0;
+  }
+
+  &__tags {
+    display: flex;
+    gap: var(--n-gap);
+    font-size: var(--smallest-font);
+  }
+
+  &__tag {
+    border-bottom: 1px dashed var(--primary-900);
+    margin-bottom: var(--s-margin);
+    color: var(--grey-400);
+    text-align: center;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: var(--n-gap);
+
+    @include breakpoint(laptops) {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+}

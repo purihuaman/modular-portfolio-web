@@ -1,0 +1,117 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+html {
+  line-height: var(--body-line-height);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-weight: var(--fweight-normal);
+}
+
+img {
+  max-width: 100%;
+  border-style: none;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  border: none;
+  font-size: 100%;
+  margin: 0;
+  outline: 0;
+  text-transform: none;
+  font-weight: var(--fweight-normal);
+  line-height: var(--body-line-height);
+  font-family: var(--main-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  line-height: var(--heading-line-height);
+  color: var(--title-color);
+}
+
+h1,
+h2 {
+  font-weight: var(--fweight-bold);
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-weight: var(--fweight-semibold);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  // margin: var(--s-margin) 0;
+}
+b,
+strong {
+  font-weight: var(--fweight-bold);
+  color: var(--title-color);
+}
+
+[type='text'],
+[type='email'],
+[type='password'],
+[type='number'],
+[type='search'],
+[type='date'],
+[type='datetime-local'],
+[type='tel'],
+[type='url'],
+select,
+textarea {
+  display: block;
+  width: 100%;
+  padding: var(--s-padding) var(--n-padding);
+  font-family: inherit;
+  border: 1px solid var(--border-color);
+  background-color: var(--first-bg);
+  line-height: var(--body-line-height);
+  font-size: var(--details-font);
+  color: var(--text-color);
+  border-radius: var(--bradius);
+  transition: var(--transition);
+  outline: 0;
+
+  &:focus,
+  &:active {
+    border-color: var(--primary-500);
+  }
+}

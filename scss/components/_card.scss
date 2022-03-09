@@ -1,0 +1,57 @@
+$height: 32px;
+$width: $height;
+
+.card {
+  padding: var(--n-padding);
+  border-radius: var(--bradius);
+  background-color: var(--second-bg);
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+
+  &__image-container {
+    min-width: 320px;
+    border-radius: var(--bradius);
+    overflow: hidden;
+  }
+
+  &__header {
+    padding-top: var(--n-padding);
+  }
+
+  &__title {
+    font-size: var(--title-font);
+
+    @include breakpoint(laptops) {
+      font-size: var(--subtitle-font);
+    }
+  }
+
+  &__subtitle {
+    margin-top: 0;
+    font-size: var(--body-font);
+  }
+
+  &__link {
+    font-size: var(--details-font);
+  }
+
+  &__text {
+    margin-bottom: 0;
+  }
+
+  // Projecto
+
+  &--project {
+    grid-column: 1 / -1;
+
+    @include breakpoint(laptops) {
+      display: grid;
+      grid-template-columns: min-content 1fr;
+      gap: var(--n-gap);
+    }
+  }
+}
+
+.icon {
+  margin-right: var(--n-margin);
+}

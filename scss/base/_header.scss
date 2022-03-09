@@ -1,0 +1,16 @@
+// ==> Header <==
+
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  height: var(--header-height);
+  transition: var(--transition);
+  background-color: var(--second-bg);
+  box-shadow: var(--box-shadow);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 var(--x-padding);
+}

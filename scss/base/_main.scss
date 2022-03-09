@@ -1,0 +1,16 @@
+// ==> Main <==
+
+.main {
+  height: 100%;
+  display: grid;
+  align-items: flex-start;
+  padding-top: var(--x-padding);
+  padding-bottom: var(--x-padding);
+  overflow: hidden;
+  gap: var(--n-gap);
+
+  @include breakpoint(tablets) {
+    padding: var(--x-padding);
+    grid-template-columns: min-content 1fr;
+  }
+}

@@ -1,0 +1,24 @@
+.switches {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.toggle-theme {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--s-gap);
+  cursor: pointer;
+
+  &__icon {
+    // margin-right: var(--s-margin);
+    width: 24px;
+    pointer-events: none;
+  }
+
+  &__text {
+    font-size: var(--details-font);
+    pointer-events: none;
+  }
+}

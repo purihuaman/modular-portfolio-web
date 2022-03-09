@@ -1,0 +1,28 @@
+.experience {
+  display: flex;
+  align-items: start;
+  gap: var(--n-gap);
+  margin: var(--n-margin) 0;
+  padding: var(--n-padding);
+  box-shadow: var(--box-shadow);
+  border: 1px solid var(--primary-500);
+  border-radius: var(--bradius);
+
+  &__image {
+    max-width: 15%;
+  }
+
+  &__time {
+    font-size: var(--details-font);
+    margin-top: 0;
+    color: var(--grey-400);
+  }
+
+  &__job {
+    color: var(--primary-500);
+  }
+
+  &__description {
+    margin: 0;
+  }
+}

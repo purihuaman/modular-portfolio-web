@@ -1,0 +1,29 @@
+.colors {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20px;
+  width: 100px;
+  pointer-events: none;
+
+  &__item {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    pointer-events: fill;
+    background-color: var(--primary-500);
+
+    &--blue {
+      background-color: var(--blue-500);
+    }
+
+    &--purple {
+      background-color: var(--purple-500);
+    }
+
+    &--red {
+      background-color: var(--red-500);
+    }
+  }
+}

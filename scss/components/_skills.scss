@@ -1,0 +1,89 @@
+:root {
+  --bar-length: 0%;
+}
+
+$width-bar: 175px;
+$height-bar: 8px;
+
+.skills {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    gap: var(--n-gap);
+    font-size: var(--smallest-font);
+    color: var(--grey-400);
+  }
+
+  &__number {
+    flex: 1;
+  }
+
+  &__amount {
+    width: 100%;
+    min-width: $width-bar;
+    flex: 3;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--n-gap);
+  }
+
+  &__tech {
+    margin: 0;
+    font-size: var(--details-font);
+    flex: 1;
+  }
+
+  &__bar {
+    flex: 3;
+  }
+
+  &__bar,
+  &__bar::after {
+    position: relative;
+    width: 100%;
+    min-width: $width-bar;
+    height: $height-bar;
+    transition: var(--transition);
+    background-color: var(--grey-400);
+    overflow: hidden;
+    border-radius: var(--bradius);
+  }
+  &__bar::after {
+    content: '';
+    position: absolute;
+    background-color: var(--primary-500);
+    left: -100%;
+    animation: skills-bar-fill 0.8s forwards;
+  }
+
+  &__bar {
+    &--20::after {
+      --bar-length: 20%;
+    }
+    &--40::after {
+      --bar-length: 40%;
+    }
+    &--60::after {
+      --bar-length: 60%;
+    }
+    &--80::after {
+      --bar-length: 80%;
+    }
+    &--100::after {
+      --bar-length: 100%;
+    }
+  }
+}
+
+@keyframes skills-bar-fill {
+  to {
+    transform: translateX(var(--bar-length));
+  }
+}

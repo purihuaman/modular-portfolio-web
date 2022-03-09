@@ -1,0 +1,17 @@
+.column {
+  display: grid;
+  gap: var(--s-gap);
+  align-items: flex-start;
+
+  &--right {
+    grid-template-rows: repeat(3, min-content);
+
+    @include breakpoint(laptops) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include breakpoint(desktop) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}

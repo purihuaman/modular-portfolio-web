@@ -1,0 +1,80 @@
+// ==> Widht and Height Table <==
+
+:root {
+  --w-table: 1200px;
+  --h-table: 300px;
+  --frozen-width: 10rem;
+}
+
+.table-container {
+  margin-top: 0.5rem;
+  height: var(--h-table);
+  overflow-x: auto;
+  position: relative;
+  width: 100%;
+  background-color: var(--second-bg);
+  border-radius: var(--bradius);
+  box-shadow: var(--box-shadow);
+}
+.table {
+  position: absolute;
+  height: auto;
+  font-size: var(--details-font);
+  color: var(--text-color);
+  min-width: var(--w-table);
+  border-collapse: collapse;
+  table-layout: fixed;
+  text-align: center;
+  background-color: var(--first-bg);
+
+  &__header,
+  &__head {
+    background-color: var(--primary-500);
+    z-index: var(--z-tooltip);
+    color: var(--grey-300);
+    font-family: var(--heading-font);
+    font-weight: var(--fweight-semibold);
+    text-transform: capitalize;
+  }
+
+  &__head,
+  &__data {
+    padding: var(--s-padding);
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  &__header,
+  &__head,
+  &__data:first-child {
+    position: -webkit-sticky;
+    position: sticky;
+    left: 0;
+    top: 0;
+  }
+  &__data {
+    text-transform: capitalize;
+
+    &:nth-child(odd) {
+      background-color: var(--second-bg);
+    }
+    &--email {
+      text-transform: lowercase;
+    }
+  }
+  &__data {
+    &:first-child {
+      background-color: var(--second-bg);
+    }
+  }
+
+  &__head {
+    &:first-child {
+      z-index: var(--z-tooltip);
+    }
+  }
+  &__row:hover .table__data {
+    color: var(--primary-500);
+    transition: background-color 0.3s;
+    background-color: var(--third-bg);
+  }
+}

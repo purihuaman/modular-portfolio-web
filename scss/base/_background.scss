@@ -1,0 +1,83 @@
+.puri-bg {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  min-height: 100vh;
+  min-width: 100%;
+}
+.home {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.puri-box {
+  position: absolute;
+}
+
+.puri-box__left-top,
+.puri-box__left-bottom,
+.puri-box__right-bottom {
+  width: 1526px;
+  height: 1526px;
+}
+
+.puri-box__right-top {
+  width: 942px;
+  height: 942px;
+}
+
+.puri-box__right-top,
+.puri-box__left-bottom {
+  background: radial-gradient(
+    50% 50% at 50%,
+    at 50%,
+    rgba(128, 0, 255, 0.16) 0,
+    rgba(0, 163, 255, 0) 100%
+  );
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(128, 0, 255, 0.16) 0,
+    rgba(0, 163, 255, 0) 100%
+  );
+}
+
+.puri-box__left-top,
+.puri-box__right-bottom {
+  background: radial-gradient(
+    50% 50% at 50%,
+    at 50%,
+    rgba(0, 163, 255, 0.17) 0,
+    rgba(0, 163, 255, 0) 100%
+  );
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(0, 163, 255, 0.17) 0,
+    rgba(0, 163, 255, 0) 100%
+  );
+}
+
+.puri-box__left-top {
+  left: -683px;
+  top: -704px;
+  z-index: 1;
+}
+
+.puri-box__right-top {
+  right: -349px;
+  top: -349px;
+  z-index: 1;
+}
+
+.puri-box__left-bottom {
+  left: -600px;
+  bottom: 0;
+}
+.puri-box__right-bottom {
+  right: -600px;
+  bottom: 0;
+}
