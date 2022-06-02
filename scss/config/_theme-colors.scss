@@ -3,26 +3,26 @@
 // ==> Primary color <==
 
 :root {
-	--blue-100: #f1f5fd;
-	--blue-200: #c7d7f9;
-	--blue-300: #96b8f5;
-	--blue-400: #3a84da;
-	--blue-500: #3477c5;
-	--blue-600: #2c67ad;
-	--blue-700: #275d9c;
-	--blue-800: #1f4d84;
-	--blue-900: #3477c580;
+	--blue-100: #77c8ff;
+	--blue-200: #55baff;
+	--blue-300: #36aeff;
+	--blue-400: #1aa3ff;
+	--blue-500: #0099ff;
+	--blue-600: #008ae6;
+	--blue-700: #007ccf;
+	--blue-800: #0070ba;
+	--blue-900: #0099ff80;
 }
 
-$blue-100: #f1f5fd;
-$blue-200: #c7d7f9;
-$blue-300: #96b8f5;
-$blue-400: #3a84da;
-$blue-500: #3477c5;
-$blue-600: #2c67ad;
-$blue-700: #275d9c;
-$blue-800: #1f4d84;
-$blue-900: #3477c580;
+$blue-100: #77c8ff;
+$blue-200: #55baff;
+$blue-300: #36aeff;
+$blue-400: #1aa3ff;
+$blue-500: #0099ff;
+$blue-600: #008ae6;
+$blue-700: #007ccf;
+$blue-800: #0070ba;
+$blue-900: #0099ff80;
 
 // ==> Second color <==
 
@@ -99,8 +99,16 @@ $green-900: #30d15880;
 // ==> Gradients <==
 
 :root {
-	--purple-accent: linear-gradient(180deg, rgba(150, 46, 255, 0.9) 1%, rgba(71, 5, 255, 0.8) 100%);
-	--accent-purple: linear-gradient(180deg, rgba(71, 5, 255, 0.8) -1%, rgba(150, 46, 255, 0.8) 100%);
+	--purple-accent: linear-gradient(
+		180deg,
+		rgba(150, 46, 255, 0.9) 1%,
+		rgba(71, 5, 255, 0.8) 100%
+	);
+	--accent-purple: linear-gradient(
+		180deg,
+		rgba(71, 5, 255, 0.8) -1%,
+		rgba(150, 46, 255, 0.8) 100%
+	);
 
 	// --gradiente-blue: linear-gradient(180deg, rgba(17, 144, 238, 0) 0%, rgba(17, 144, 238, 0.2) 100%);
 	// --gradiente-purple: linear-gradient(180deg, rgba(189, 0, 255, 0.3) 0%, rgba(189, 0, 255, 0) 100%);
@@ -112,27 +120,16 @@ $green-900: #30d15880;
 // ==> Themes dark and light <==
 
 :root {
-	// dark - 1
-	--grey-100: #fcf1fc;
-	--grey-200: #fcf4fc;
-	--grey-300: #ecf0f3;
-	--grey-400: #8899a6;
-	--grey-500: #5b7083;
-	--grey-600: #3a444c;
-	--grey-700: #283340;
-	--grey-800: #1c2733;
-	--grey-900: #17202a;
-
 	// dark - 2
-	--grey-100: #fcf1fc;
-	--grey-200: #fcf4fc;
-	--grey-300: #ecf0f3;
-	--grey-400: #8892a4;
-	--grey-500: #4f5867;
-	--grey-600: #2b3139;
-	--grey-700: #252a31;
-	--grey-800: #20242a;
-	--grey-900: #1b1f24;
+	--grey-100: #f2f2f7;
+	--grey-200: #ebebf0;
+	--grey-300: #e5e5ea;
+	--grey-400: #8b8e93;
+	--grey-500: #51555c;
+	--grey-600: #1f2533;
+	--grey-700: #191f2a;
+	--grey-800: #171c26;
+	--grey-900: #151922;
 }
 
 :root {
